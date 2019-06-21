@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4A5AA5E22BC4C7A0005752C /* ScoreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A5AA5D22BC4C7A0005752C /* ScoreButton.swift */; };
+		C4A5AA6022BC4D5F0005752C /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A5AA5F22BC4D5F0005752C /* ColorSliderView.swift */; };
+		C4A5AA6222BC4D7B0005752C /* PreviewColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A5AA6122BC4D7B0005752C /* PreviewColorView.swift */; };
+		C4A5AA6422BC55F70005752C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A5AA6322BC55F70005752C /* ContentViewModel.swift */; };
+		C4A5AA6722BC56390005752C /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A5AA6622BC56390005752C /* Color+Utils.swift */; };
+		C4A5AA6A22BC56820005752C /* ColorCombination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A5AA6922BC56820005752C /* ColorCombination.swift */; };
 		C4F5E8FE22B59F6800F123F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5E8FD22B59F6800F123F0 /* AppDelegate.swift */; };
 		C4F5E90022B59F6800F123F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5E8FF22B59F6800F123F0 /* SceneDelegate.swift */; };
 		C4F5E90222B59F6800F123F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5E90122B59F6800F123F0 /* ContentView.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4A5AA5D22BC4C7A0005752C /* ScoreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreButton.swift; sourceTree = "<group>"; };
+		C4A5AA5F22BC4D5F0005752C /* ColorSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderView.swift; sourceTree = "<group>"; };
+		C4A5AA6122BC4D7B0005752C /* PreviewColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewColorView.swift; sourceTree = "<group>"; };
+		C4A5AA6322BC55F70005752C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		C4A5AA6622BC56390005752C /* Color+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Utils.swift"; sourceTree = "<group>"; };
+		C4A5AA6922BC56820005752C /* ColorCombination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCombination.swift; sourceTree = "<group>"; };
 		C4F5E8FA22B59F6800F123F0 /* SwiftUITests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F5E8FD22B59F6800F123F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F5E8FF22B59F6800F123F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4A5AA5C22BC4C600005752C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4F5E90122B59F6800F123F0 /* ContentView.swift */,
+				C4A5AA6322BC55F70005752C /* ContentViewModel.swift */,
+				C4A5AA5D22BC4C7A0005752C /* ScoreButton.swift */,
+				C4A5AA5F22BC4D5F0005752C /* ColorSliderView.swift */,
+				C4A5AA6122BC4D7B0005752C /* PreviewColorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4A5AA6522BC561F0005752C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C4A5AA6622BC56390005752C /* Color+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C4A5AA6822BC56760005752C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4A5AA6922BC56820005752C /* ColorCombination.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C4F5E8F122B59F6800F123F0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +96,11 @@
 		C4F5E8FC22B59F6800F123F0 /* SwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
+				C4A5AA6822BC56760005752C /* Models */,
+				C4A5AA6522BC561F0005752C /* Utils */,
+				C4A5AA5C22BC4C600005752C /* Views */,
 				C4F5E8FD22B59F6800F123F0 /* AppDelegate.swift */,
 				C4F5E8FF22B59F6800F123F0 /* SceneDelegate.swift */,
-				C4F5E90122B59F6800F123F0 /* ContentView.swift */,
 				C4F5E90322B59F6E00F123F0 /* Assets.xcassets */,
 				C4F5E90822B59F6E00F123F0 /* LaunchScreen.storyboard */,
 				C4F5E90B22B59F6E00F123F0 /* Info.plist */,
@@ -146,6 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A5AA6022BC4D5F0005752C /* ColorSliderView.swift in Sources */,
+				C4A5AA6222BC4D7B0005752C /* PreviewColorView.swift in Sources */,
+				C4A5AA6A22BC56820005752C /* ColorCombination.swift in Sources */,
+				C4A5AA5E22BC4C7A0005752C /* ScoreButton.swift in Sources */,
+				C4A5AA6722BC56390005752C /* Color+Utils.swift in Sources */,
+				C4A5AA6422BC55F70005752C /* ContentViewModel.swift in Sources */,
 				C4F5E8FE22B59F6800F123F0 /* AppDelegate.swift in Sources */,
 				C4F5E90022B59F6800F123F0 /* SceneDelegate.swift in Sources */,
 				C4F5E90222B59F6800F123F0 /* ContentView.swift in Sources */,
